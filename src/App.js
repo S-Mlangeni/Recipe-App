@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-require("dotenv").config(); //Loads the variables in the .env file as environment variables. 
+/* require("dotenv").config(); */ //Loads the variables in the .env file as environment variables. 
 
 function App() {
   const MY_APP_ID = process.env.REACT_APP_API_ID; //Uppercase letters naming convention is used as it is recommended in the API's url.
