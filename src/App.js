@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
-/* require("dotenv").config(); */ //Loads the variables in the .env file as environment variables. 
 
 function App() {
   const MY_APP_ID = process.env.REACT_APP_API_ID; //Uppercase letters naming convention is used as it is recommended in the API's url.
   const MY_APP_KEY = process.env.REACT_APP_API_KEY; //Same reason as above.
   /* Note that "REACT_APP_" or "react_app_" is the required prefix to the name of the
   variables in the .env file since react is being used. Otherwise, it is not necessary. Ensure to restart 
-  server every time a new variable is added to the .env file. */
+  server every time a new variable is added to the .env file (i.e. every time you set a new environment variable). */
   const [recipeLabel, setRecipeLabel] = useState([]);
   const [Search, setSearch] = useState("");
   
